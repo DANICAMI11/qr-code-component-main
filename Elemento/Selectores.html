@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .descendientes p{
+            background-color: aqua;
+            font-size: 50px;
+        }
+        .hijo-directo > p{
+            background-color: rgb(255, 0, 0);
+            font-size: 50px;
+        }
+        .elemetno-adyacente + p{
+            background-color: antiquewhite;
+            font-size: 20px;
+        }
+        .general-hermano ~ p { 
+            background-color: brown;
+            font-size: 20px;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="descendientes">
+        <p>Hola</p>
+        <div>
+            <p>Como estas</p>
+            <p>Bien</p>
+        </div>
+    </div>    
+    <div class="hijo-directo">
+        <p>Hola</p>
+        <div>
+            <p>Como estas</p>
+            <p>Bien</p>
+        </div>
+    </div>  
+    <div class="elemetno-adyacente"></div>
+    <p>hola</p>
+    <p>como estas</p>
+    <div class="general-hermano"></div>
+    <p>hola</p>
+    <p>que se dice</p>
+    <div></div>
+    <p>aa</p>
+    
+</body>
+</html>
