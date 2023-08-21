@@ -1,62 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        section{
-            display: flex;
-            justify-content: center;
-        }
-        .card{
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            align-items: center;
-            width: 300px;
-            height: 300px;
-            background-color: bisque;
-            overflow: hidden;
-        }
-        .card img{
-            width: 300px;
-            height: 100px;
-        }
-        .card img:nth-child(2){
-            border-radius: 100px;
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            top: 50px;
-        }
-        .informacion{
-            margin-top: 60px;
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: 1fr;
-        }
-        .informacion:nth-child(1){
-            grid-column: 1;
-            grid-row: 1/2;
-        }        
-        .informacion:nth-child(1){
-            grid-column: 1;
-            grid-row: 2/2;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+       background-color: hsl(221, 70%, 89%); 
+       margin: 0;
+    }
+    .content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card{
+      display: flex;
+      width: 300px;
+      height: 500px;
+      flex-direction: column;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5%;
+
+    }
+    .card img{
+      width: 100%;
+      border-radius: 5%;
+      margin: 0;
+    }
+    .card h1{
+      font-weight:bolder;
+      font-size: 25px;
+      text-align: center;
+    }
+    .card p{
+      margin: 0;
+      font-size: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <section>
-        <div class="card">
-            <img src="https://images.pexels.com/photos/13599831/pexels-photo-13599831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <div class="informacion">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda cupiditate earum id deserunt placeat tempore ipsa rerum impedit necessitatibus sint omnis, error voluptates reprehenderit cum quas expedita incidunt optio labore?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda cupiditate earum id deserunt placeat tempore ipsa rerum impedit necessitatibus sint omnis, error voluptates reprehenderit cum quas expedita incidunt optio labore?</p>
-            </div>
-        </div>
-    </section>
+<div class="content">
+  <div class="card">
+    <img src="images/image-qr-code.png" alt="qrcode">
+    <h1>Improve your front-end skills by building projects</h1>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
+</div>
 </body>
 </html>
